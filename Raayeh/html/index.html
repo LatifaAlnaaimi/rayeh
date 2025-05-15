@@ -1,0 +1,1832 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Raayeh</title>
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <label for="sidebar-toggle" class="side-list-b">
+                <span></span><span></span><span></span>
+              </label>
+          <div class="logo">
+            <img src="/assest/img/logo/C-BG-W-WORD.png" alt="Logo">
+          </div>
+            <div class="menu-section">
+              <ul class="menu">
+                  <li><a data-target="home">الرئيسية </a></li>
+                  <li><a data-target="product">منتجاتنا</a></li>
+                  <li><a data-target="favorit">مفضلاتي </a></li>
+                  <li><a data-target="contact-us">اتصل بنا</a></li>
+              </ul>
+          </div>
+            <div class="links-icons">
+              <!-- أيقونة البحث -->
+                <i id="openSearch" class="fas fa-search"></i>
+              <i data-target="account"class="fas fa-user"></i>
+              <i data-target="favorit" class="fas fa-heart"></i>
+              <i data-target="cart" class="fas fa-shopping-cart"></i>
+            </div>
+          </div>
+      </nav>
+      <nav id="breadcrumb" class="breadcrumb"></nav>
+
+      <input type="checkbox" id="sidebar-toggle" hidden>
+      <aside class="sidebar">
+        <div class="sidebar-header">
+            <label for="sidebar-toggle" class="close-btn">&times;</label>
+            <img src="/assest/img/logo/W-BG-B-WORD.png" alt="رايح" class="logo">
+        </div>
+  
+        <div class="sidebar-search">
+          <i id="navbarSearchIcon" class="fas fa-search"></i>
+        </div>
+  <div class="sidebar-content">
+  <ul class="sidebar-menu">
+    <li><a href="#" data-target="home"class="section-title">الرئيسية</a></li>
+    <li><a href="#" data-target="product"><i class="fas fa-th-large"></i> كل المنتجات</a></li>
+    <li class="section-title">الأقسام الرئيسية</li>
+    <li><a href="#" data-target="photo"><i class="fas fa-camera"></i> التصوير</a></li>
+    <li><a href="#" data-target="tool"><i class="fas fa-tools"></i> الأدوات</a></li>
+    <li><a href="#" data-target="party"><i class="fas fa-glass-cheers"></i> المناسبات</a></li>
+    <li><a href="#" data-target="dress"><i class="fas fa-tshirt"></i> الفساتين و البدلات</a></li>
+    <li><a href="#" data-target="عروض و خصومات">عروض و خصومات</a></li>
+    <li class="section-title">مستخدم / حسابي</li>
+    <li><a href="#" data-target="account"><i class="fas fa-user"></i> حسابي</a></li>
+    <li><a href="#" data-target="cart"><i class="fas fa-shopping-cart"></i> طلباتي</a></li>
+    <li><a href="#" data-target="favorit"><i class="fas fa-heart"></i> المفضلة</a></li>
+    <li><a href="#" data-target="contact us"><i class="fas fa-headset"></i> المحادثات / الدعم</a></li>
+    <li class="section-title">أخرى</li>
+    <li><a href="#">حول رايح</a></li>
+    <li><a href="#">الأسئلة الشائعة</a></li>
+    <li><a href="#">الشروط و الأحكام</a></li>
+    <li><a href="#" data-target="contact us">اتصل بنا</a></li>
+  </ul>
+  <div class="sidebar-actions">
+    <a href="#" data-target="signin"class="btn login">الدخول</a>
+    <a href="#" data-target="signup" class="register-link">تسجيل جديد</a>
+  </div>
+  </div>
+      </aside>
+      <div id="overlay"></div>
+</header>
+
+
+<div id="page-content">
+
+</div>
+<section id="home" class="page active ">
+  <section class="hero product hero-home">
+    <div class="overlay">
+    <div class="hero-container">
+    <h1>اللي تحتاجه... يوصلك ويرجع </h1>
+    <p>استأجر المنتجات اللي تحتاجها وقت ما تحتاجها، بدون عناء الشراء</p>
+    <button class="btn-main"> استعرض منتجاتنا</button>
+  </div>
+  </div>
+  </section>
+  
+   <!-- مميزات رايح -->
+   <h2>مميزات رايح</h2>
+   <div class="features">
+     <div class="feature">
+       <i class="fa-solid fa-truck feature-icon"></i>
+       <div>سهل ومرن</div>
+     </div>
+     <div class="feature">
+       <i class="fa-solid fa-wallet feature-icon"></i>
+       <div>وفر فلوسك</div>
+     </div>
+     <div class="feature">
+       <i class="fa-solid fa-bolt feature-icon"></i>
+       <div>توصيل سريع</div>
+     </div>
+   </div>
+ 
+   <!-- منتجاتنا -->
+   <h2>منتجاتنا</h2>
+   <div class="categories">
+     <div class="category">
+       <div class="category-box">
+         <i class="fa-solid fa-camera category-icon"></i>
+         <div>التصوير</div>
+       </div>
+     </div>
+     <div class="category">
+       <div class="category-box">
+         <i class="fa-solid fa-screwdriver-wrench category-icon"></i>
+         <div>الأدوات</div>
+       </div>
+     </div>
+     <div class="category">
+       <div class="category-box">
+         <i class="fa-solid fa-masks-theater category-icon"></i>
+         <div>المناسبات</div>
+       </div>
+     </div>
+     <div class="category">
+       <div class="category-box">
+         <i class="fa-solid fa-person-dress category-icon"></i>
+         <div>الفساتين والبدلات</div>
+       </div>
+     </div>
+   </div>
+ 
+   <!-- تواصل معنا -->
+   <footer id="contact-us>
+     <p>تواصل معنا لمساعدتك</p>
+     <div class="social-icons">
+       <a href="#" title="instagram"><i class="fas fa-instagram"></i></a>
+       <a href="#" title="facebook"><i class="fa fa-instagram"></i></a>
+       <a href="#" title="linked-in"><i class=""></i></a>
+     </div>
+     <p class="email">البريد الإلكتروني للمساعدة</p>
+     <p class="email">help@rayeh.com</p>
+   </footer>
+  </section>
+
+<section id="product" class="page ">
+<section class="hero product hero-product">
+  <div class="overlay">
+  <div class="hero-container">
+  <h1>استعرض منتجاتنا</h1>
+  <p>اختر ما يناسبك من المنتجات التي يمكنك استئجارها بكل سهولة</p>
+  <button class="btn-main">ابدأ الاستئجار الآن</button>
+</div>
+</div>
+</section>
+
+<section class="product-container">
+<!-- 2. زر "تصفية" -->
+<label class="top-1"id="openFilter" >
+  <span>تصفية</span>
+  <i class="fas fa-filter"></i>
+</label>
+
+  <section class="filter">
+      <div class="sidebar-content">
+      <ul class="sidebar-menu">
+        
+        <li class="section-title">الأقسام الرئيسية</li>
+        <li><label>
+          <input type="checkbox" name="category" value="تصوير">
+          تصوير
+        </label></li>
+        <li><label>
+          <input type="checkbox" name="category" value="تصوير">
+          الادوات
+        </label></li>
+        <li><label>
+          <input type="checkbox" name="category" value="تصوير">
+          المناسبات
+        </label></li>
+        <li><label>
+          <input type="checkbox" name="category" value="تصوير">
+          الفساتين و البدلات
+        </label></li>
+
+        <li class="section-title">المدة </li>
+        <li><label>
+          <input type="checkbox" name="category" value="تصوير">
+          يوم
+        </label></li>
+        <li><label>
+          <input type="checkbox" name="category" value="تصوير">
+          3ايام
+        </label></li>
+        <li><label>
+          <input type="checkbox" name="category" value="تصوير">
+          اسبوعي
+        </label></li>
+        <li><label>
+          <input type="checkbox" name="category" value="تصوير">
+         شهري 
+        </label></li>
+
+        <li class="section-title">التقيمات </li>
+        <li><label>
+          <input type="checkbox" name="category" value="تصوير">
+          ★★
+        </label></li>
+        <li><label>
+          <input type="checkbox" name="category" value="تصوير">
+          ★★★
+        </label></li>
+        <li><label>
+          <input type="checkbox" name="category" value="تصوير">
+          ★★★★
+        </label></li>
+        <li><label>
+          <input type="checkbox" name="category" value="تصوير">
+          ★★★★★ 
+        </label></li>
+        
+        <li class="section-title">التوفر </li>
+        <li><label>
+          <input type="checkbox" name="category" value="تصوير">
+          متاح
+        </label></li>
+        <li><label>
+          <input type="checkbox" name="category" value="تصوير">
+          غير متاح
+        </label></li>
+      </ul>
+    
+      <div class="sidebar-actions">
+        <a href="#" class="btn-main">تصفية</a>
+        <a href="#" class="btn-second"> ألغاء</a>
+      </div>
+      </div>
+    </section>
+
+  <!------------------------------------------------------------>
+  <section class="product-section">
+  
+    <div class="top"><!--عنوان القسم-->
+      <h2>التصوير</h2>
+      <a href="#" data-target="photo">عرض الكل</a>
+    </div>
+    <section class="product-grid">
+      <section data-target="show-product"class="product-card product">
+      
+        <div class="top-right">جديد</div>
+        <div class="top-left"><i class="fas fa-heart"></i></div>
+        <div class="product-img">
+        <img src="/assest/img/photograph/Screenshot 2025-04-07 154138.png" alt="كاميرا" class="img">
+      </div>
+        <div class="content">
+          <h3>كاميرا كانون EOS 90D</h3>
+          <p>كاميرا احترافية الدقة<br>مناسبة للتصوير الفوتوغرافي</p>
+        </div>
+      
+        <div class="bottom-row">
+          <span class="cart-icon"><i class="fas fa-cart-plus"></i></span>
+          <div class="price-review">
+            <div class="price">60 درهم/يوم</div>
+            <div class="rating">★ <span>4</span></div>
+          </div>
+        </div>
+      </section>
+    <!------------------->
+   <section class="product-card product">
+      
+    <div class="top-right">جديد</div>
+    <div class="top-left"><i class="fas fa-heart"></i></div>
+    <div class="product-img">
+    <img src="/assest/img/photograph/Screenshot 2025-04-07 154138.png" alt="كاميرا" class="img">
+  </div>
+    <div class="content">
+      <h3>كاميرا كانون EOS 90D</h3>
+      <p>كاميرا احترافية الدقة<br>مناسبة للتصوير الفوتوغرافي</p>
+    </div>
+  
+    <div class="bottom-row">
+      <span class="cart-icon"><i class="fas fa-cart-plus"></i></span>
+      <div class="price-review">
+        <div class="price">60 درهم/يوم</div>
+        <div class="rating">★ <span>4</span></div>
+      </div>
+    </div>
+  </section>
+   <!------------------->
+   <section class="product-card product">
+      
+    <div class="top-right">جديد</div>
+    <div class="top-left"><i class="fas fa-heart"></i></div>
+    <div class="product-img">
+    <img src="/assest/img/photograph/عدسة 50 مم.png" alt="كاميرا" class="img">
+  </div>
+    <div class="content">
+      <h3>عدسة 50 مم</h3>
+      <p>كاميرا احترافية الدقة<br>مناسبة للتصوير الفوتوغرافي</p>
+    </div>
+  
+    <div class="bottom-row">
+      <span class="cart-icon"><i class="fas fa-cart-plus"></i></span>
+      <div class="price-review">
+        <div class="price">60 درهم/يوم</div>
+        <div class="rating">★ <span>4</span></div>
+      </div>
+    </div>
+  </section>
+   <!------------------->
+   <section class="product-card product">
+      
+    <div class="top-right">جديد</div>
+    <div class="top-left"><i class="fas fa-heart"></i></div>
+    <div class="product-img">
+    <img src="/assest/img/photograph/ChatGPT Image Apr 6, 2025, 12_59_49 PM.png" alt="كاميرا" class="img">
+  </div>
+    <div class="content">
+      <h3>كاميرا كانون EOS 90D</h3>
+      <p>كاميرا احترافية الدقة<br>مناسبة للتصوير الفوتوغرافي</p>
+    </div>
+  
+    <div class="bottom-row">
+      <span class="cart-icon"><i class="fas fa-cart-plus"></i></span>
+      <div class="price-review">
+        <div class="price">60 درهم/يوم</div>
+        <div class="rating">★ <span>4</span></div>
+      </div>
+    </div>
+  </section>
+   <!------------------->
+   <section class="product-card product">
+      
+    <div class="top-right">جديد</div>
+    <div class="top-left"><i class="fas fa-heart"></i></div>
+    <div class="product-img">
+    <img src="/assest/img/photograph/ChatGPT Image Apr 6, 2025, 12_59_49 PM.png" alt="كاميرا" class="img">
+  </div>
+    <div class="content">
+      <h3>كاميرا كانون EOS 90D</h3>
+      <p>كاميرا احترافية الدقة<br>مناسبة للتصوير الفوتوغرافي</p>
+    </div>
+  
+    <div class="bottom-row">
+      <span class="cart-icon"><i class="fas fa-cart-plus"></i></span>
+      <div class="price-review">
+        <div class="price">60 درهم/يوم</div>
+        <div class="rating">★ <span>4</span></div>
+      </div>
+    </div>
+  </section>
+  </section>
+  
+  </section>
+  <section class="product-section">
+  
+    <div class="top"><!--عنوان القسم-->
+      <h2>الادوات</h2>
+      <a href="#"data-target="tool">عرض الكل</a>
+    </div>
+    <section class="product-grid">
+      <section class="product-card product">
+          
+        <div class="top-right">جديد</div>
+        <div class="top-left"><i class="fas fa-heart"></i></div>
+        <div class="product-img">
+        <img src="/assest/img/tools/ChatGPT Image Apr 7, 2025, 07_13_35 AM.png" alt="كاميرا" class="img">
+      </div>
+        <div class="content">
+          <h3>كاميرا كانون EOS 90D</h3>
+          <p>كاميرا احترافية الدقة<br>مناسبة للتصوير الفوتوغرافي</p>
+        </div>
+      
+        <div class="bottom-row">
+          <span class="cart-icon"><i class="fas fa-cart-plus"></i></span>
+          <div class="price-review">
+            <div class="price">60 درهم/يوم</div>
+            <div class="rating">★ <span>4</span></div>
+          </div>
+        </div>
+      <!----------------------->
+      
+      <!------------------------------------------>
+  </section>
+    <!------------------->
+   <section class="product-card product">
+      
+    <div class="top-right">جديد</div>
+    <div class="top-left"><i class="fas fa-heart"></i></div>
+    <div class="product-img">
+    <img src="/assest/img/tools/سلالم المنيوم.png" alt="كاميرا" class="img">
+  </div>
+    <div class="content">
+      <h3>كاميرا كانون EOS 90D</h3>
+      <p>كاميرا احترافية الدقة<br>مناسبة للتصوير الفوتوغرافي</p>
+    </div>
+  
+    <div class="bottom-row">
+      <span class="cart-icon"><i class="fas fa-cart-plus"></i></span>
+      <div class="price-review">
+        <div class="price">60 درهم/يوم</div>
+        <div class="rating">★ <span>4</span></div>
+      </div>
+    </div>
+  </section>
+   <!------------------->
+   <section class="product-card product">
+      
+    <div class="top-right">جديد</div>
+    <div class="top-left"><i class="fas fa-heart"></i></div>
+    <div class="product-img">
+    <img src="/assest/img/tools/منشار كهربائي.png" alt="كاميرا" class="img">
+  </div>
+    <div class="content">
+      <h3>كاميرا كانون EOS 90D</h3>
+      <p>كاميرا احترافية الدقة<br>مناسبة للتصوير الفوتوغرافي</p>
+    </div>
+  
+    <div class="bottom-row">
+      <span class="cart-icon"><i class="fas fa-cart-plus"></i></span>
+      <div class="price-review">
+        <div class="price">60 درهم/يوم</div>
+        <div class="rating">★ <span>4</span></div>
+      </div>
+    </div>
+  </section>
+   <!------------------->
+   <section class="product-card product">
+      
+    <div class="top-right">جديد</div>
+    <div class="top-left"><i class="fas fa-heart"></i></div>
+    <div class="product-img">
+    <img src="/assest/img/photograph/ChatGPT Image Apr 6, 2025, 12_59_49 PM.png" alt="كاميرا" class="img">
+  </div>
+    <div class="content">
+      <h3>كاميرا كانون EOS 90D</h3>
+      <p>كاميرا احترافية الدقة<br>مناسبة للتصوير الفوتوغرافي</p>
+    </div>
+  
+    <div class="bottom-row">
+      <span class="cart-icon"><i class="fas fa-cart-plus"></i></span>
+      <div class="price-review">
+        <div class="price">60 درهم/يوم</div>
+        <div class="rating">★ <span>4</span></div>
+      </div>
+    </div>
+  </section>
+   <!------------------->
+   <section class="product-card product">
+      
+    <div class="top-right">جديد</div>
+    <div class="top-left"><i class="fas fa-heart"></i></div>
+    <div class="product-img">
+    <img src="/assest/img/photograph/ChatGPT Image Apr 6, 2025, 12_59_49 PM.png" alt="كاميرا" class="img">
+  </div>
+    <div class="content">
+      <h3>كاميرا كانون EOS 90D</h3>
+      <p>كاميرا احترافية الدقة<br>مناسبة للتصوير الفوتوغرافي</p>
+    </div>
+  
+    <div class="bottom-row">
+      <span class="cart-icon"><i class="fas fa-cart-plus"></i></span>
+      <div class="price-review">
+        <div class="price">60 درهم/يوم</div>
+        <div class="rating">★ <span>4</span></div>
+      </div>
+    </div>
+  </section>
+  </section>
+  
+  </section>
+  <section class="product-section">
+  
+    <div class="top"><!--عنوان القسم-->
+      <h2>المناسبات</h2>
+      <a href="#"data-target="party">عرض الكل</a>
+    </div>
+    <section class="product-grid">
+      <section class="product-card">
+          
+        <div class="top-right">جديد</div>
+        <div class="top-left"><i class="fas fa-heart"></i></div>
+        <div class="product-img">
+        <img src="/assest/img/party/الة فشار.png" alt="كاميرا" class="img">
+      </div>
+        <div class="content">
+          <h3>كاميرا كانون EOS 90D</h3>
+          <p>كاميرا احترافية الدقة<br>مناسبة للتصوير الفوتوغرافي</p>
+        </div>
+      
+        <div class="bottom-row">
+          <span class="cart-icon"><i class="fas fa-cart-plus"></i></span>
+          <div class="price-review">
+            <div class="price">60 درهم/يوم</div>
+            <div class="rating">★ <span>4</span></div>
+          </div>
+        </div>
+      <!----------------------->
+      
+      <!------------------------------------------>
+  </section>
+    <!------------------->
+   <section class="product-card">
+      
+    <div class="top-right">جديد</div>
+    <div class="top-left"><i class="fas fa-heart"></i></div>
+    <div class="product-img">
+    <img src="/assest/img/party/بروجكتر.png" alt="كاميرا" class="img">
+  </div>
+    <div class="content">
+      <h3>كاميرا كانون EOS 90D</h3>
+      <p>كاميرا احترافية الدقة<br>مناسبة للتصوير الفوتوغرافي</p>
+    </div>
+  
+    <div class="bottom-row">
+      <span class="cart-icon"><i class="fas fa-cart-plus"></i></span>
+      <div class="price-review">
+        <div class="price">60 درهم/يوم</div>
+        <div class="rating">★ <span>4</span></div>
+      </div>
+    </div>
+  </section>
+   <!------------------->
+   <section class="product-card">
+      
+    <div class="top-right">جديد</div>
+    <div class="top-left"><i class="fas fa-heart"></i></div>
+    <div class="product-img">
+    <img src="/assest/img/party/كراسي و طاولة.png" alt="كاميرا" class="img">
+  </div>
+    <div class="content">
+      <h3>كاميرا كانون EOS 90D</h3>
+      <p>كاميرا احترافية الدقة<br>مناسبة للتصوير الفوتوغرافي</p>
+    </div>
+  
+    <div class="bottom-row">
+      <span class="cart-icon"><i class="fas fa-cart-plus"></i></span>
+      <div class="price-review">
+        <div class="price">60 درهم/يوم</div>
+        <div class="rating">★ <span>4</span></div>
+      </div>
+    </div>
+  </section>
+   <!------------------->
+   <section class="product-card">
+      
+    <div class="top-right">جديد</div>
+    <div class="top-left"><i class="fas fa-heart"></i></div>
+    <div class="product-img">
+    <img src="/assest/img/photograph/ChatGPT Image Apr 6, 2025, 12_59_49 PM.png" alt="كاميرا" class="img">
+  </div>
+    <div class="content">
+      <h3>كاميرا كانون EOS 90D</h3>
+      <p>كاميرا احترافية الدقة<br>مناسبة للتصوير الفوتوغرافي</p>
+    </div>
+  
+    <div class="bottom-row">
+      <span class="cart-icon"><i class="fas fa-cart-plus"></i></span>
+      <div class="price-review">
+        <div class="price">60 درهم/يوم</div>
+        <div class="rating">★ <span>4</span></div>
+      </div>
+    </div>
+  </section>
+   <!------------------->
+   <section class="product-card">
+      
+    <div class="top-right">جديد</div>
+    <div class="top-left"><i class="fas fa-heart"></i></div>
+    <div class="product-img">
+    <img src="/assest/img/photograph/ChatGPT Image Apr 6, 2025, 12_59_49 PM.png" alt="كاميرا" class="img">
+  </div>
+    <div class="content">
+      <h3>كاميرا كانون EOS 90D</h3>
+      <p>كاميرا احترافية الدقة<br>مناسبة للتصوير الفوتوغرافي</p>
+    </div>
+  
+    <div class="bottom-row">
+      <span class="cart-icon"><i class="fas fa-cart-plus"></i></span>
+      <div class="price-review">
+        <div class="price">60 درهم/يوم</div>
+        <div class="rating">★ <span>4</span></div>
+      </div>
+    </div>
+  </section>
+  </section>
+  
+  </section>
+  <section class="product-section">
+  
+    <div class="top"><!--عنوان القسم-->
+      <h2>الفساتين و البدلات</h2>
+      <a href="#"data-target="dress">عرض الكل</a>
+    </div>
+    <section class="product-grid">
+      <section class="product-card product">
+          
+        <div class="top-right">جديد</div>
+        <div class="top-left"><i class="fas fa-heart"></i></div>
+        <div class="product-img">
+        <img src="/assest/img/dress/بدلة سوداء.png" alt="كاميرا" class="img">
+      </div>
+        <div class="content">
+          <h3>كاميرا كانون EOS 90D</h3>
+          <p>كاميرا احترافية الدقة<br>مناسبة للتصوير الفوتوغرافي</p>
+        </div>
+      
+        <div class="bottom-row">
+          <span class="cart-icon"><i class="fas fa-cart-plus"></i></span>
+          <div class="price-review">
+            <div class="price">60 درهم/يوم</div>
+            <div class="rating">★ <span>4</span></div>
+          </div>
+        </div>
+      <!----------------------->
+      
+      <!------------------------------------------>
+  </section>
+    <!------------------->
+   <section class="product-card product">
+      
+    <div class="top-right">جديد</div>
+    <div class="top-left"><i class="fas fa-heart"></i></div>
+    <div class="product-img">
+    <img src="/assest/img/dress/فستان ذهبي طويل.png" alt="كاميرا" class="img">
+  </div>
+    <div class="content">
+      <h3>كاميرا كانون EOS 90D</h3>
+      <p>كاميرا احترافية الدقة<br>مناسبة للتصوير الفوتوغرافي</p>
+    </div>
+  
+    <div class="bottom-row">
+      <span class="cart-icon"><i class="fas fa-cart-plus"></i></span>
+      <div class="price-review">
+        <div class="price">60 درهم/يوم</div>
+        <div class="rating">★ <span>4</span></div>
+      </div>
+    </div>
+  </section>
+   <!------------------->
+   <section class="product-card product">
+      
+    <div class="top-right">جديد</div>
+    <div class="top-left"><i class="fas fa-heart"></i></div>
+    <div class="product-img">
+    <img src="/assest/img/dress/فستان زهري.png" alt="كاميرا" class="img">
+  </div>
+    <div class="content">
+      <h3>كاميرا كانون EOS 90D</h3>
+      <p>كاميرا احترافية الدقة<br>مناسبة للتصوير الفوتوغرافي</p>
+    </div>
+  
+    <div class="bottom-row">
+      <span class="cart-icon"><i class="fas fa-cart-plus"></i></span>
+      <div class="price-review">
+        <div class="price">60 درهم/يوم</div>
+        <div class="rating">★ <span>4</span></div>
+      </div>
+    </div>
+  </section>
+   <!------------------->
+   <section class="product-card product">
+      
+    <div class="top-right">جديد</div>
+    <div class="top-left"><i class="fas fa-heart"></i></div>
+    <div class="product-img">
+    <img src="/assest/img/photograph/ChatGPT Image Apr 6, 2025, 12_59_49 PM.png" alt="كاميرا" class="img">
+  </div>
+    <div class="content">
+      <h3>كاميرا كانون EOS 90D</h3>
+      <p>كاميرا احترافية الدقة<br>مناسبة للتصوير الفوتوغرافي</p>
+    </div>
+  
+    <div class="bottom-row">
+      <span class="cart-icon"><i class="fas fa-cart-plus"></i></span>
+      <div class="price-review">
+        <div class="price">60 درهم/يوم</div>
+        <div class="rating">★ <span>4</span></div>
+      </div>
+    </div>
+  </section>
+   <!------------------->
+   <section class="product-card product">
+      
+    <div class="top-right">جديد</div>
+    <div class="top-left"><i class="fas fa-heart"></i></div>
+    <div class="product-img">
+    <img src="/assest/img/photograph/ChatGPT Image Apr 6, 2025, 12_59_49 PM.png" alt="كاميرا" class="img">
+  </div>
+    <div class="content">
+      <h3>كاميرا كانون EOS 90D</h3>
+      <p>كاميرا احترافية الدقة<br>مناسبة للتصوير الفوتوغرافي</p>
+    </div>
+  
+    <div class="bottom-row">
+      <span class="cart-icon"><i class="fas fa-cart-plus"></i></span>
+      <div class="price-review">
+        <div class="price">60 درهم/يوم</div>
+        <div class="rating">★ <span>4</span></div>
+      </div>
+    </div>
+  </section>
+  </section>
+  
+  </section>
+<!------------------------------------------------>
+
+</section>
+</section>
+<!------------==========================================================--->
+<section id="photo" class="page" >
+  <section class="hero photo hero-photo">
+    <div class="overlay">
+    <div class="hero-container">
+    <h1>معدات تصوير احترافية  </h1>
+    <p>معدات تصوير احترافية بتوصيل سريع</p>
+    <button class="btn-main">ابدأ الاستئجار الآن</button>
+  </div>
+  </div>
+  </section>
+  
+  <section class="product-container">
+  <!-- 2. زر "تصفية" -->
+  <label class="top-1">
+    <span>تصفية</span>
+    <i class="fas fa-filter"></i>
+  </label>
+  
+    <section class="filter">
+        <div class="sidebar-content">
+        <ul class="sidebar-menu">
+          
+          <li class="section-title">الماركة </li>
+          <li><label>
+            <input type="checkbox" name="category" value="Canon">
+            Canon
+          </label></li>
+          <li><label>
+            <input type="checkbox" name="category" value="Nikon">
+            Nikon
+          </label></li>
+          <li><label>
+            <input type="checkbox" name="category" value="Sony">
+            Sony
+          </label></li>
+          <li><label>
+            <input type="checkbox" name="category" value="DJI (درون) ">
+            DJI (درون) 
+          </label></li>
+  
+          <li class="section-title">النوع </li>
+          <li><label>
+            <input type="checkbox" name="category" value="كاميرات DSLR">
+            كاميرات DSLR
+          </label></li>
+          <li><label>
+            <input type="checkbox" name="category" value="كاميرات Mirrorless">
+            كاميرات Mirrorless
+          </label></li>
+          <li><label>
+            <input type="checkbox" name="category" value="كاميرات فيديو">
+            كاميرات فيديو
+          </label></li>
+          <li><label>
+            <input type="checkbox" name="category" value="عدسات">
+            عدسات 
+          </label></li>
+  
+          <li class="section-title">التقنية </li>
+          <li><label>
+            <input type="checkbox" name="category" value="كاميرا رقمية">
+            كاميرا رقمية
+          </label></li>
+          <li><label>
+            <input type="checkbox" name="category" value="كاميرا أفلام">
+            كاميرا أفلام
+          </label></li>
+          <li><label>
+            <input type="checkbox" name="category" value="كاميرات مقاومة للماء">
+            كاميرات مقاومة للماء
+          </label></li>
+        
+        </ul>
+      
+        <div class="sidebar-actions">
+          <a href="#" class="btn-main">تصفية</a>
+          <a href="#" class="btn-second"> ألغاء</a>
+        </div>
+        </div>
+      </section>
+  
+    <!------------------------------------------------------------>
+    <section class="product-section">
+    
+      <div class="top"><!--عنوان القسم-->
+        <h2>التصوير</h2>
+      </div>
+      <section class="product-grid">
+        <section class="product-card product">
+            
+          <div class="top-right">جديد</div>
+          <div class="top-left"><i class="fas fa-heart"></i></div>
+          <div class="product-img">
+          <img src="/assest/img/photograph/ChatGPT Image Apr 6, 2025, 12_59_49 PM.png" alt="كاميرا" class="img">
+        </div>
+          <div class="content">
+            <h3>كاميرا كانون EOS 90D</h3>
+            <p>كاميرا احترافية الدقة<br>مناسبة للتصوير الفوتوغرافي</p>
+          </div>
+        
+          <div class="bottom-row">
+            <span class="cart-icon"><i class="fas fa-cart-plus"></i></span>
+            <div class="price-review">
+              <div class="price">60 درهم/يوم</div>
+              <div class="rating">★ <span>4</span></div>
+            </div>
+          </div>
+        <!----------------------->
+        
+        <!------------------------------------------>
+    </section>
+      <!------------------->
+     <section class="product-card product">
+        
+      <div class="top-right">جديد</div>
+      <div class="top-left"><i class="fas fa-heart"></i></div>
+      <div class="product-img">
+      <img src="/assest/img/photograph/Screenshot 2025-04-07 154138.png" alt="كاميرا" class="img">
+    </div>
+      <div class="content">
+        <h3>كاميرا كانون EOS 90D</h3>
+        <p>كاميرا احترافية الدقة<br>مناسبة للتصوير الفوتوغرافي</p>
+      </div>
+    
+      <div class="bottom-row">
+        <span class="cart-icon"><i class="fas fa-cart-plus"></i></span>
+        <div class="price-review">
+          <div class="price">60 درهم/يوم</div>
+          <div class="rating">★ <span>4</span></div>
+        </div>
+      </div>
+    </section>
+     <!------------------->
+     <section class="product-card product">
+        
+      <div class="top-right">جديد</div>
+      <div class="top-left"><i class="fas fa-heart"></i></div>
+      <div class="product-img">
+      <img src="/assest/img/photograph/عدسة 50 مم.png" alt="كاميرا" class="img">
+    </div>
+      <div class="content">
+        <h3>عدسة 50 مم</h3>
+        <p>كاميرا احترافية الدقة<br>مناسبة للتصوير الفوتوغرافي</p>
+      </div>
+    
+      <div class="bottom-row">
+        <span class="cart-icon"><i class="fas fa-cart-plus"></i></span>
+        <div class="price-review">
+          <div class="price">60 درهم/يوم</div>
+          <div class="rating">★ <span>4</span></div>
+        </div>
+      </div>
+    </section>
+     <!------------------->
+     <section class="product-card product">
+        
+      <div class="top-right">جديد</div>
+      <div class="top-left"><i class="fas fa-heart"></i></div>
+      <div class="product-img">
+      <img src="/assest/img/photograph/ChatGPT Image Apr 6, 2025, 12_59_49 PM.png" alt="كاميرا" class="img">
+    </div>
+      <div class="content">
+        <h3>كاميرا كانون EOS 90D</h3>
+        <p>كاميرا احترافية الدقة<br>مناسبة للتصوير الفوتوغرافي</p>
+      </div>
+    
+      <div class="bottom-row">
+        <span class="cart-icon"><i class="fas fa-cart-plus"></i></span>
+        <div class="price-review">
+          <div class="price">60 درهم/يوم</div>
+          <div class="rating">★ <span>4</span></div>
+        </div>
+      </div>
+    </section>
+     <!------------------->
+     <section class="product-card product">
+        
+      <div class="top-right">جديد</div>
+      <div class="top-left"><i class="fas fa-heart"></i></div>
+      <div class="product-img">
+      <img src="/assest/img/photograph/ChatGPT Image Apr 6, 2025, 12_59_49 PM.png" alt="كاميرا" class="img">
+    </div>
+      <div class="content">
+        <h3>كاميرا كانون EOS 90D</h3>
+        <p>كاميرا احترافية الدقة<br>مناسبة للتصوير الفوتوغرافي</p>
+      </div>
+    
+      <div class="bottom-row">
+        <span class="cart-icon"><i class="fas fa-cart-plus"></i></span>
+        <div class="price-review">
+          <div class="price">60 درهم/يوم</div>
+          <div class="rating">★ <span>4</span></div>
+        </div>
+      </div>
+    </section>
+    </section>
+    
+    </section>
+  <!------------------------------------------------>
+  
+  </section>
+  <!----------------------------------------------->
+  </section>
+  <!--------------------=================================================-->
+<section id="tool" class="page">
+  <section class="hero tool hero-tool">
+    <div class="overlay">
+    <div class="hero-container">
+    <h1>أدوات العمل والبناء </h1>
+    <p>معدات عملية للإيجار تناسب الهواة والمحترفين</p>
+    <button class="btn-main">ابدأ الاستئجار الآن</button>
+      </div>
+      </div>
+      </section>
+  <section class="product-container">
+  <!-- 2. زر "تصفية" -->
+  <label class="top-1">
+    <span>تصفية</span>
+    <i class="fas fa-filter"></i>
+  </label>
+  
+    <section class="filter">
+        <div class="sidebar-content">
+        <ul class="sidebar-menu">
+          
+          <li class="section-title">النوع </li>
+          <li><label>
+            <input type="checkbox" name="category" value="أدوات كهربائية">
+            أدوات كهربائية
+          </label></li>
+          <li><label>
+            <input type="checkbox" name="category" value="أدوات يدوية">
+            أدوات يدوية
+          </label></li>
+          <li><label>
+            <input type="checkbox" name="category" value="أدوات قياس">
+            أدوات قياس
+          </label></li>
+          <li><label>
+            <input type="checkbox" name="category" value="أدوات بناء">
+            أدوات بناء
+          </label></li>
+  
+          <li class="section-title">الماركة </li>
+          <li><label>
+            <input type="checkbox" name="category" value="Bosch">
+            Bosch
+          </label></li>
+          <li><label>
+            <input type="checkbox" name="category" value="Makita">
+            Makita
+          </label></li>
+          <li><label>
+            <input type="checkbox" name="category" value="Dewalt">
+            Dewalt
+          </label></li>
+          <li class="section-title">الحالة </li>
+          <li><label>
+            <input type="checkbox" name="category" value="جديد">
+            جديد
+          </label></li>
+          <li><label>
+            <input type="checkbox" name="category" value="مستعمل">
+            مستعمل
+          </label></li>
+        </ul>
+      
+        <div class="sidebar-actions">
+          <a href="#" class="btn-main">تصفية</a>
+          <a href="#" class="btn-second"> ألغاء</a>
+        </div>
+        </div>
+      </section>
+  
+    <!------------------------------------------------------------>
+    <section class="product-section">
+    
+      <div class="top"><!--عنوان القسم-->
+        <h2>الادوات</h2>
+      </div>
+      <section class="product-grid">
+        <section class="product-card product">
+            
+          <div class="top-right">جديد</div>
+          <div class="top-left"><i class="fas fa-heart"></i></div>
+          <div class="product-img">
+          <img src="/assest/img/photograph/ChatGPT Image Apr 6, 2025, 12_59_49 PM.png" alt="كاميرا" class="img">
+        </div>
+          <div class="content">
+            <h3>كاميرا كانون EOS 90D</h3>
+            <p>كاميرا احترافية الدقة<br>مناسبة للتصوير الفوتوغرافي</p>
+          </div>
+        
+          <div class="bottom-row">
+            <span class="cart-icon"><i class="fas fa-cart-plus"></i></span>
+            <div class="price-review">
+              <div class="price">60 درهم/يوم</div>
+              <div class="rating">★ <span>4</span></div>
+            </div>
+          </div>
+        <!----------------------->
+        
+        <!------------------------------------------>
+    </section>
+      <!------------------->
+     <section class="product-card product">
+        
+      <div class="top-right">جديد</div>
+      <div class="top-left"><i class="fas fa-heart"></i></div>
+      <div class="product-img">
+      <img src="/assest/img/photograph/Screenshot 2025-04-07 154138.png" alt="كاميرا" class="img">
+    </div>
+      <div class="content">
+        <h3>كاميرا كانون EOS 90D</h3>
+        <p>كاميرا احترافية الدقة<br>مناسبة للتصوير الفوتوغرافي</p>
+      </div>
+    
+      <div class="bottom-row">
+        <span class="cart-icon"><i class="fas fa-cart-plus"></i></span>
+        <div class="price-review">
+          <div class="price">60 درهم/يوم</div>
+          <div class="rating">★ <span>4</span></div>
+        </div>
+      </div>
+    </section>
+     <!------------------->
+     <section class="product-card product">
+        
+      <div class="top-right">جديد</div>
+      <div class="top-left"><i class="fas fa-heart"></i></div>
+      <div class="product-img">
+      <img src="/assest/img/photograph/عدسة 50 مم.png" alt="كاميرا" class="img">
+    </div>
+      <div class="content">
+        <h3>عدسة 50 مم</h3>
+        <p>كاميرا احترافية الدقة<br>مناسبة للتصوير الفوتوغرافي</p>
+      </div>
+    
+      <div class="bottom-row">
+        <span class="cart-icon"><i class="fas fa-cart-plus"></i></span>
+        <div class="price-review">
+          <div class="price">60 درهم/يوم</div>
+          <div class="rating">★ <span>4</span></div>
+        </div>
+      </div>
+    </section>
+     <!------------------->
+     <section class="product-card product">
+        
+      <div class="top-right">جديد</div>
+      <div class="top-left"><i class="fas fa-heart"></i></div>
+      <div class="product-img">
+      <img src="/assest/img/photograph/ChatGPT Image Apr 6, 2025, 12_59_49 PM.png" alt="كاميرا" class="img">
+    </div>
+      <div class="content">
+        <h3>كاميرا كانون EOS 90D</h3>
+        <p>كاميرا احترافية الدقة<br>مناسبة للتصوير الفوتوغرافي</p>
+      </div>
+    
+      <div class="bottom-row">
+        <span class="cart-icon"><i class="fas fa-cart-plus"></i></span>
+        <div class="price-review">
+          <div class="price">60 درهم/يوم</div>
+          <div class="rating">★ <span>4</span></div>
+        </div>
+      </div>
+    </section>
+     <!------------------->
+     <section class="product-card product">
+        
+      <div class="top-right">جديد</div>
+      <div class="top-left"><i class="fas fa-heart"></i></div>
+      <div class="product-img">
+      <img src="/assest/img/photograph/ChatGPT Image Apr 6, 2025, 12_59_49 PM.png" alt="كاميرا" class="img">
+    </div>
+      <div class="content">
+        <h3>كاميرا كانون EOS 90D</h3>
+        <p>كاميرا احترافية الدقة<br>مناسبة للتصوير الفوتوغرافي</p>
+      </div>
+    
+      <div class="bottom-row">
+        <span class="cart-icon"><i class="fas fa-cart-plus"></i></span>
+        <div class="price-review">
+          <div class="price">60 درهم/يوم</div>
+          <div class="rating">★ <span>4</span></div>
+        </div>
+      </div>
+    </section>
+    </section>
+    
+    </section>
+  <!------------------------------------------------>
+  
+  </section>
+</section>
+  <!--===================================================================-->
+<section id="party" class="page party">
+    <section class="hero hero-party">
+      <div class="overlay">
+      <div class="hero-container">
+      <h1>معدات مناسبات لإطلالة لا تُنسى</h1>
+      <p>كل ما تحتاجه لحفلتك من تجهيزات وزينة، بدون عناء الشراء أو التخزين</p>
+      <button class="btn-main">ابدأ الاستئجار الآن</button>
+        </div>
+        </div>
+    </section>
+    
+    <section class="product-container">
+    <!-- 2. زر "تصفية" -->
+    <label class="top-1">
+      <span>تصفية</span>
+      <i class="fas fa-filter"></i>
+    </label>
+    
+      <section class="filter">
+          <div class="sidebar-content">
+          <ul class="sidebar-menu">
+            
+            <li class="section-title">نوع المناسبة</li>
+            <li><label>
+              <input type="checkbox" name="category" value="حفلات زفاف">
+              حفلات زفاف
+            </label></li>
+            <li><label>
+              <input type="checkbox" name="category" value="مناسبات خاصة">
+              مناسبات خاصة
+            </label></li>
+            <li><label>
+              <input type="checkbox" name="category" value="حفلات أطفال">
+              حفلات أطفال
+            </label></li>
+            <li><label>
+              <input type="checkbox" name="category" value="معارض">
+              معارض
+            </label></li>
+    
+            <li class="section-title">المعدات الخاصة </li>
+            <li><label>
+              <input type="checkbox" name="category" value="جهزة صوت">
+              جهزة صوت
+            </label></li>
+            <li><label>
+              <input type="checkbox" name="category" value="بروجكتور">
+              بروجكتور
+            </label></li>
+            <li><label>
+              <input type="checkbox" name="category" value="خيم وطاولات">
+              خيم وطاولات
+            </label></li>
+            
+          </ul>
+        
+          <div class="sidebar-actions">
+            <a href="#" class="btn-main">تصفية</a>
+            <a href="#" class="btn-second"> ألغاء</a>
+          </div>
+          </div>
+        </section>
+    
+      <!------------------------------------------------------------>
+      <section class="product-section">
+      
+        <div class="top"><!--عنوان القسم-->
+          <h2>المناسبات</h2>
+        </div>
+        <section class="product-grid">
+          <section class="product-card product">
+              
+            <div class="top-right">جديد</div>
+            <div class="top-left"><i class="fas fa-heart"></i></div>
+            <div class="product-img">
+            <img src="/assest/img/party/الة فشار.png" alt="كاميرا" class="img">
+          </div>
+            <div class="content">
+              <h3>كاميرا كانون EOS 90D</h3>
+              <p>كاميرا احترافية الدقة<br>مناسبة للتصوير الفوتوغرافي</p>
+            </div>
+          
+            <div class="bottom-row">
+              <span class="cart-icon"><i class="fas fa-cart-plus"></i></span>
+              <div class="price-review">
+                <div class="price">60 درهم/يوم</div>
+                <div class="rating">★ <span>4</span></div>
+              </div>
+            </div>
+          <!----------------------->
+          
+          <!------------------------------------------>
+      </section>
+        <!------------------->
+       <section class="product-card product">
+          
+        <div class="top-right">جديد</div>
+        <div class="top-left"><i class="fas fa-heart"></i></div>
+        <div class="product-img">
+        <img src="/assest/img/party/بروجكتر.png" alt="كاميرا" class="img">
+      </div>
+        <div class="content">
+          <h3>كاميرا كانون EOS 90D</h3>
+          <p>كاميرا احترافية الدقة<br>مناسبة للتصوير الفوتوغرافي</p>
+        </div>
+      
+        <div class="bottom-row">
+          <span class="cart-icon"><i class="fas fa-cart-plus"></i></span>
+          <div class="price-review">
+            <div class="price">60 درهم/يوم</div>
+            <div class="rating">★ <span>4</span></div>
+          </div>
+        </div>
+      </section>
+       <!------------------->
+       <section class="product-card product">
+          
+        <div class="top-right">جديد</div>
+        <div class="top-left"><i class="fas fa-heart"></i></div>
+        <div class="product-img">
+        <img src="/assest/img/party/كراسي و طاولة.png" alt="كاميرا" class="img">
+      </div>
+        <div class="content">
+          <h3>كاميرا كانون EOS 90D</h3>
+          <p>كاميرا احترافية الدقة<br>مناسبة للتصوير الفوتوغرافي</p>
+        </div>
+      
+        <div class="bottom-row">
+          <span class="cart-icon"><i class="fas fa-cart-plus"></i></span>
+          <div class="price-review">
+            <div class="price">60 درهم/يوم</div>
+            <div class="rating">★ <span>4</span></div>
+          </div>
+        </div>
+      </section>
+       <!------------------->
+       <section class="product-card product">
+          
+        <div class="top-right">جديد</div>
+        <div class="top-left"><i class="fas fa-heart"></i></div>
+        <div class="product-img">
+        <img src="/assest/img/photograph/ChatGPT Image Apr 6, 2025, 12_59_49 PM.png" alt="كاميرا" class="img">
+      </div>
+        <div class="content">
+          <h3>كاميرا كانون EOS 90D</h3>
+          <p>كاميرا احترافية الدقة<br>مناسبة للتصوير الفوتوغرافي</p>
+        </div>
+      
+        <div class="bottom-row">
+          <span class="cart-icon"><i class="fas fa-cart-plus"></i></span>
+          <div class="price-review">
+            <div class="price">60 درهم/يوم</div>
+            <div class="rating">★ <span>4</span></div>
+          </div>
+        </div>
+      </section>
+       <!------------------->
+       <section class="product-card product">
+          
+        <div class="top-right">جديد</div>
+        <div class="top-left"><i class="fas fa-heart"></i></div>
+        <div class="product-img">
+        <img src="/assest/img/photograph/ChatGPT Image Apr 6, 2025, 12_59_49 PM.png" alt="كاميرا" class="img">
+      </div>
+        <div class="content">
+          <h3>كاميرا كانون EOS 90D</h3>
+          <p>كاميرا احترافية الدقة<br>مناسبة للتصوير الفوتوغرافي</p>
+        </div>
+      
+        <div class="bottom-row">
+          <span class="cart-icon"><i class="fas fa-cart-plus"></i></span>
+          <div class="price-review">
+            <div class="price">60 درهم/يوم</div>
+            <div class="rating">★ <span>4</span></div>
+          </div>
+        </div>
+      </section>
+      </section>
+      
+      </section>
+    <!------------------------------------------------>
+    
+    </section>
+    <!----------------------------------------------->
+  </section>
+  <!--===================================================================-->
+<section id="dress" class="page dress">
+    <section class="hero hero-dress">
+      <div class="overlay">
+      <div class="hero-container">
+      <h1>تألقي بأجمل الإطلالات  </h1>
+      <p>استأجر فستانك أو بدلتك بكل سهولة وأناقة</p>
+      <button class="btn-main">ابدأ الاستئجار الآن</button>
+    </div>
+    </div>
+    </section>
+    
+    <section class="product-container">
+    <!-- 2. زر "تصفية" -->
+    <label class="top-1">
+      <span>تصفية</span>
+      <i class="fas fa-filter"></i>
+    </label>
+    
+      <section class="filter">
+          <div class="sidebar-content">
+          <ul class="sidebar-menu">
+            
+            <li class="section-title"> المقاس</li>
+            <li><label>
+              <input type="checkbox" name="category" value="XS">
+              XS
+            </label></li>
+            <li><label>
+              <input type="checkbox" name="category" value="S">
+              S
+            </label></li>
+            <li><label>
+              <input type="checkbox" name="category" value="L">
+              L
+            </label></li>
+            <li><label>
+              <input type="checkbox" name="category" value="XL">
+              XL
+            </label></li>
+    
+            <li class="section-title">اللون </li>
+            <li><label>
+              <input type="checkbox" name="category" value="أبيض">
+              أبيض
+            </label></li>
+            <li><label>
+              <input type="checkbox" name="category" value="أسود">
+              أسود
+            </label></li>
+            <li><label>
+              <input type="checkbox" name="category" value="ذهبي">
+              ذهبي
+            </label></li>
+            <li><label>
+              <input type="checkbox" name="category" value="ملون">
+             ملون 
+            </label></li>
+    
+            <li class="section-title">النوع </li>
+            <li><label>
+              <input type="checkbox" name="category" value="فساتين سهرة">
+              فساتين سهرة
+            </label></li>
+            <li><label>
+              <input type="checkbox" name="category" value="فساتين زفاف">
+              فساتين زفاف
+            </label></li>
+            <li><label>
+              <input type="checkbox" name="category" value="بدلات رسمية">
+              بدلات رسمية
+            </label></li>
+          </ul>
+        
+          <div class="sidebar-actions">
+            <a href="#" class="btn-main">تصفية</a>
+            <a href="#" class="btn-second"> ألغاء</a>
+          </div>
+          </div>
+        </section>
+    
+      <!------------------------------------------------------------>
+      <section class="product-section">
+      
+        <div class="top"><!--عنوان القسم-->
+          <h2>الفساتين و البدلات</h2>
+        </div>
+        <section class="product-grid">
+          <section class="product-card product">
+              
+            <div class="top-right">جديد</div>
+            <div class="top-left"><i class="fas fa-heart"></i></div>
+            <div class="product-img">
+            <img src="/assest/img/dress/بدلة سوداء.png" alt="كاميرا" class="img">
+          </div>
+            <div class="content">
+              <h3>كاميرا كانون EOS 90D</h3>
+              <p>كاميرا احترافية الدقة<br>مناسبة للتصوير الفوتوغرافي</p>
+            </div>
+          
+            <div class="bottom-row">
+              <span class="cart-icon"><i class="fas fa-cart-plus"></i></span>
+              <div class="price-review">
+                <div class="price">60 درهم/يوم</div>
+                <div class="rating">★ <span>4</span></div>
+              </div>
+            </div>
+          <!----------------------->
+          
+          <!------------------------------------------>
+      </section>
+        <!------------------->
+       <section class="product-card product">
+          
+        <div class="top-right">جديد</div>
+        <div class="top-left"><i class="fas fa-heart"></i></div>
+        <div class="product-img">
+        <img src="/assest/img/dress/فستان ذهبي طويل.png" alt="كاميرا" class="img">
+      </div>
+        <div class="content">
+          <h3>كاميرا كانون EOS 90D</h3>
+          <p>كاميرا احترافية الدقة<br>مناسبة للتصوير الفوتوغرافي</p>
+        </div>
+      
+        <div class="bottom-row">
+          <span class="cart-icon"><i class="fas fa-cart-plus"></i></span>
+          <div class="price-review">
+            <div class="price">60 درهم/يوم</div>
+            <div class="rating">★ <span>4</span></div>
+          </div>
+        </div>
+      </section>
+       <!------------------->
+       <section class="product-card product">
+          
+        <div class="top-right">جديد</div>
+        <div class="top-left"><i class="fas fa-heart"></i></div>
+        <div class="product-img">
+        <img src="/assest/img/dress/فستان زهري.png" alt="كاميرا" class="img">
+      </div>
+        <div class="content">
+          <h3>كاميرا كانون EOS 90D</h3>
+          <p>كاميرا احترافية الدقة<br>مناسبة للتصوير الفوتوغرافي</p>
+        </div>
+      
+        <div class="bottom-row">
+          <span class="cart-icon"><i class="fas fa-cart-plus"></i></span>
+          <div class="price-review">
+            <div class="price">60 درهم/يوم</div>
+            <div class="rating">★ <span>4</span></div>
+          </div>
+        </div>
+      </section>
+       <!------------------->
+       <section class="product-card product">
+          
+        <div class="top-right">جديد</div>
+        <div class="top-left"><i class="fas fa-heart"></i></div>
+        <div class="product-img">
+        <img src="/assest/img/photograph/ChatGPT Image Apr 6, 2025, 12_59_49 PM.png" alt="كاميرا" class="img">
+      </div>
+        <div class="content">
+          <h3>كاميرا كانون EOS 90D</h3>
+          <p>كاميرا احترافية الدقة<br>مناسبة للتصوير الفوتوغرافي</p>
+        </div>
+      
+        <div class="bottom-row">
+          <span class="cart-icon"><i class="fas fa-cart-plus"></i></span>
+          <div class="price-review">
+            <div class="price">60 درهم/يوم</div>
+            <div class="rating">★ <span>4</span></div>
+          </div>
+        </div>
+      </section>
+       <!------------------->
+       <section class="product-card product">
+          
+        <div class="top-right">جديد</div>
+        <div class="top-left"><i class="fas fa-heart"></i></div>
+        <div class="product-img">
+        <img src="/assest/img/photograph/ChatGPT Image Apr 6, 2025, 12_59_49 PM.png" alt="كاميرا" class="img">
+      </div>
+        <div class="content">
+          <h3>كاميرا كانون EOS 90D</h3>
+          <p>كاميرا احترافية الدقة<br>مناسبة للتصوير الفوتوغرافي</p>
+        </div>
+      
+        <div class="bottom-row">
+          <span class="cart-icon"><i class="fas fa-cart-plus"></i></span>
+          <div class="price-review">
+            <div class="price">60 درهم/يوم</div>
+            <div class="rating">★ <span>4</span></div>
+          </div>
+        </div>
+      </section>
+      </section>
+      
+      </section>
+    <!------------------------------------------------>
+    
+    </section>
+    <!----------------------------------------------->
+  </section>
+  <!--===================================================================-->
+<section id="cart" class="page cart">
+      <div class="cart-section">
+      
+        <div class="top">
+          <h2>عربة التسوق</h2>
+        </div>
+        <section class="cart-grid">
+          <div class="cart-item">
+            <div class="item-image">
+              <img src="/assest/img/photograph/عدسة 50 مم.png" alt="صورة المنتج">
+            </div>
+            <div class="item-details">
+              <p class="item-title">عدسة 50 مم - فتحة واسعة</p>
+              <p class="item-description">عدسة مثالية لتصوير البورتريه والفيديو، تقدم جودة عالية وخلفية ضبابية جذابة.</p>
+              <p class="item-price">60 درهم / يوم</p>
+            </div>
+            <div class="item-controls">
+              <button title="delete-btn" class="delete-btn"><i class="fas fa-trash"></i></button>
+              <div class="quantity-controls">
+                <span class="qty">  1</span>
+                <button class="qty-btn">+</button>
+              </div>
+            </div>
+          </div>
+          <div class="cart-item">
+            <div class="item-image">
+              <img src="/assest/img/photograph/عدسة 50 مم.png" alt="صورة المنتج">
+            </div>
+            <div class="item-details">
+              <p class="item-title">عدسة 50 مم - فتحة واسعة</p>
+              <p class="item-description">عدسة مثالية لتصوير البورتريه والفيديو، تقدم جودة عالية وخلفية ضبابية جذابة.</p>
+              <p class="item-price">60 درهم / يوم</p>
+            </div>
+            <div class="item-controls">
+              <button title="delete-btn" class="delete-btn"><i class="fas fa-trash"></i></button>
+              <div class="quantity-controls">
+                <span class="qty">  1</span>
+                <button class="qty-btn">+</button>
+              </div>
+            </div>
+          </div>
+          <div class="cart-item">
+            <div class="item-image">
+              <img src="/assest/img/photograph/عدسة 50 مم.png" alt="صورة المنتج">
+            </div>
+            <div class="item-details">
+              <p class="item-title">عدسة 50 مم - فتحة واسعة</p>
+              <p class="item-description">عدسة مثالية لتصوير البورتريه والفيديو، تقدم جودة عالية وخلفية ضبابية جذابة.</p>
+              <p class="item-price">60 درهم / يوم</p>
+            </div>
+            <div class="item-controls">
+              <button title="delete-btn" class="delete-btn"><i class="fas fa-trash"></i></button>
+              <div class="quantity-controls">
+                <span class="qty">  1</span>
+                <button class="qty-btn">+</button>
+              </div>
+            </div>
+          </div>
+          <!-------------------------------------------------------->
+          
+        <div class="cart-total">المجموع الفرعي: 540 درهم</div>
+      </section>
+      <div class="summary-section">
+        <h3>ملخص الطلب</h3>
+        <div class="line"><span>المجموع الفرعي</span><span>540 درهم</span></div>
+        <div class="line"><span>التأمين</span><span>1000 درهم</span></div>
+        <div class="line"><span>الشحن</span><span> مجانا</span></div>
+        <div class="total , line"><span>المجموع الكلي</span><span>1540 درهم</span></div>
+        <button>تابع عملية الدفع</button>
+      </div>
+      </div>    
+  </section>
+  <!--===================================================================-->
+    <section id="favorit" class="page favorit">
+      <div class="favorit-section">
+      
+        <div class="top">
+          <h2>المفضلة</h2>
+        </div>
+        <section class="cart-grid">
+          <div class="cart-item">
+            <div class="item-image">
+              <img src="/assest/img/photograph/عدسة 50 مم.png" alt="صورة المنتج">
+            </div>
+            <div class="item-details">
+              <p class="item-title">عدسة 50 مم - فتحة واسعة</p>
+              <p class="item-description">عدسة مثالية لتصوير البورتريه والفيديو، تقدم جودة عالية وخلفية ضبابية جذابة.</p>
+              <p class="item-price">60 درهم / يوم</p>
+            </div>
+            <div class="item-controls-f">
+              <button title="delete-btn" class="delete-btn"><i class="fas fa-trash"></i></button>
+                <button title="cart-btn" class="delete-btn"><i class="fas fa-shopping-cart"></i></button>
+            
+            </div>
+          </div>
+          <div class="cart-item">
+            <div class="item-image">
+              <img src="/assest/img/photograph/عدسة 50 مم.png" alt="صورة المنتج">
+            </div>
+            <div class="item-details">
+              <p class="item-title">عدسة 50 مم - فتحة واسعة</p>
+              <p class="item-description">عدسة مثالية لتصوير البورتريه والفيديو، تقدم جودة عالية وخلفية ضبابية جذابة.</p>
+              <p class="item-price">60 درهم / يوم</p>
+            </div>
+            <div class="item-controls-f">
+              <button title="delete-btn" class="delete-btn"><i class="fas fa-trash"></i></button>
+                <button title="cart-btn" class="delete-btn"><i class="fas fa-shopping-cart"></i></button>
+            
+            </div>
+          </div>
+          <div class="cart-item">
+            <div class="item-image">
+              <img src="/assest/img/photograph/عدسة 50 مم.png" alt="صورة المنتج">
+            </div>
+            <div class="item-details">
+              <p class="item-title">عدسة 50 مم - فتحة واسعة</p>
+              <p class="item-description">عدسة مثالية لتصوير البورتريه والفيديو، تقدم جودة عالية وخلفية ضبابية جذابة.</p>
+              <p class="item-price">60 درهم / يوم</p>
+            </div>
+            <div class="item-controls-f">
+              <button title="delete-btn" class="delete-btn"><i class="fas fa-trash"></i></button>
+                <button title="cart-btn" class="delete-btn"><i class="fas fa-shopping-cart"></i></button>
+            
+            </div>
+          </div>
+          <div class="cart-item">
+            <div class="item-image">
+              <img src="/assest/img/photograph/عدسة 50 مم.png" alt="صورة المنتج">
+            </div>
+            <div class="item-details">
+              <p class="item-title">عدسة 50 مم - فتحة واسعة</p>
+              <p class="item-description">عدسة مثالية لتصوير البورتريه والفيديو، تقدم جودة عالية وخلفية ضبابية جذابة.</p>
+              <p class="item-price">60 درهم / يوم</p>
+            </div>
+            <div class="item-controls-f">
+              <button title="delete-btn" class="delete-btn"><i class="fas fa-trash"></i></button>
+                <button title="cart-btn" class="delete-btn"><i class="fas fa-shopping-cart"></i></button>
+            
+            </div>
+          </div>
+          <!-------------------------------------------------------->
+          
+      </section>
+      
+      </div>    
+  </section>  
+  <!--===================================================================-->
+<section id="show-product" class="page show-product">
+  <div class="container">
+    <div class="product-page">
+      <div class="product-image">
+        <img src="/assest/img/photograph/ChatGPT Image Apr 6, 2025, 12_59_49 PM.png" alt="كاميرا" >
+      
+      </div>
+
+      <div class="product-details">
+        <div class="header-info">
+          <h2>كاميرا كانون EOS 90D</h2>
+          <div class="status-tags">
+            <span class="label">جديد</span>
+            <span class="label available">متوفر</span>
+            <p class="product-price">60 درهم / يوم</p>
+          </div>
+          
+        </div>
+        
+
+        <p class="description">
+          كاميرا احترافية بدقة 32.5 ميجابيكسل. مناسبة لتصوير الفيديوهات عالية الجودة والمشاريع التجارية أو الشخصية، تأتي مع عدسة 135mm-18، بطارية إضافية، وشاحن.
+        </p>
+
+        <h4>تفاصيل الإيجار</h4>
+        <div class="rent-options">
+          <button>سنوي</button>
+          <button>أسبوعي</button>
+          <button class="active">يومي</button>
+        </div>
+
+        <div class="dates">
+          <input type="date" placeholder="تاريخ الاستلام" />
+          <input type="date" placeholder="تاريخ الإرجاع" />
+        </div>
+
+        <div class="included">
+          <h4>ما يتضمنه الإيجار</h4>
+          <ul>
+            <li>كاميرا</li>
+            <li>عدسة</li>
+            <li>شاحن</li>
+            <li>حقيبة حمل</li>
+          </ul>
+        </div>
+        <button class="add-to-cart">أضف إلى السلة</button>
+
+      </div>
+    </div>
+
+    
+
+    </div>
+    <div class="reviews">
+      <h3>تقييمات و مراجعات المنتج</h3>
+      <strong>4.5 ⭐</strong> (5 مراجعات)
+      <div class="review">
+        <strong>Mohammed</strong> - 12 April 2024
+        <p>منتج ممتاز حلو الواحد يأخذ شي و يخلص منه و يرجعه ما يحتاج يكبس أغراض و وايد فالمبيت خصوصا الشقق و البيوت الصغيرة</p>
+      </div>
+    </div>
+  </section>
+  <!--===================================================================-->
+  <section id="account" class="page account">
+
+    <div class="container">
+      <div class="sidebar-account">
+        <h3>مرحباً!</h3>
+        <a href="#">الطلبات</a>
+        <a href="#">الإرجاع</a>
+        <a href="#">قيد الإيجار</a>
+        <a href="#">المفضلة</a>
+        <a href="#">حسابي</a>
+        <a href="#">العناوين</a>
+        <a href="#" class="singout">تسجيل الخروج</a>
+      </div>
+      <div class="main-content">
+        <h2>حسابي</h2>
+        <form>
+          <div class="form-group">
+            <label for="email">البريد الإلكتروني</label>
+            <input type="email" id="email" placeholder="example@email.com">
+          </div>
+          <div class="form-group">
+            <label for="phone">رقم الهاتف</label>
+            <input type="tel" id="phone" placeholder="+971 0500000000">
+          </div>
+  
+          <div class="form-group">
+            <label for="firstName">الاسم الأول</label>
+            <input type="text" id="firstName" placeholder="الاسم الأول">
+          </div>
+          <div class="form-group">
+            <label for="lastName">الاسم الأخير</label>
+            <input type="text" id="lastName" placeholder="الاسم الأخير">
+          </div>
+  
+          <div class="form-group full-width">
+            <label for="birthdate">يوم الميلاد</label>
+            <input type="date" id="birthdate">
+          </div>
+  
+          <div class="form-group full-width">
+            <label for="address">العنوان كامل</label>
+            <input type="text" id="address" placeholder="شقة 8، اسم المبنى، شارع 14">
+          </div>
+  
+          <div class="form-group full-width">
+            <label>تسمية العنوان</label>
+            <div class="radio-group">
+              <label><input type="radio" name="addressType"> المنزل</label>
+              <label><input type="radio" name="addressType"> العمل</label>
+            </div>
+          </div>
+  
+          <div class="form-group">
+            <label for="altPhone">رقم الهاتف</label>
+            <input type="tel" id="altPhone" placeholder="+971 0500000000">
+          </div>
+          <div class="form-group">
+            <label for="altName">الاسم</label>
+            <input type="text" id="altName" placeholder="الاسم">
+          </div>
+  
+          <button type="submit" class="submit-btn">حفظ التحديثات</button>
+        </form>
+      </div>
+    </div>
+  </section>
+<section cless="menubar">
+  <div class="box">
+<i data-target="account" class="fa fa-user"></i>
+<i data-target="product"class="fa fa-bars"></i>
+<i data-target="home"class="fa fa-home  iconactive"></i>
+<i data-target="favorit"class="fa fa-heart"></i>
+<i data-target="cart" class="fa fa-shopping-cart"></i>
+
+  </div>
+</section>
+<footer class="footer">
+  
+    <div class="footer-top">
+      <div class="footer-section">
+        <h4>صفحاتنا</h4>
+        <ul>
+          <li><a href="#"data-target="home">الرئيسية</a></li>
+          <li><a href="#"data-target="product">منتجاتنا</a></li>
+          <li><a href="#"data-target="about us">نبذة عنا</a></li>
+          <li><a href="#"data-target="contact us">تواصل معنا</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>منتجاتنا</h4>
+        <ul>
+          <li><a href="#"data-target="photo">التصوير</a></li>
+          <li><a href="#"data-target="tool">الأدوات</a></li>
+          <li><a href="#"data-target="party">الفعاليات</a></li>
+          <li><a href="#"data-target="dress">الفساتين و البدلات</a></li>
+        </ul>
+      </div>
+    </div>
+  
+    <div class="footer-links">
+      <a href="#">شروط الاستخدام</a>
+      <a href="#">سياسة الضمان</a>
+      <a href="#">سياسة الإرجاع</a>
+    </div>
+  
+    <div class="footer-bottom">
+      <div class="footer-payments">
+        <img src="https://cdn-icons-png.flaticon.com/512/349/349221.png" alt="Mastercard">
+        <img src="https://cdn-icons-png.flaticon.com/512/196/196578.png" alt="Visa">
+      </div>
+      <div class="footer-copy">
+        <p>© 2025 جميع الحقوق محفوظة</p>
+        <strong>رايح</strong>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="/js/script.js"></script>
+</body>
+</html>

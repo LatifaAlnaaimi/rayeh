@@ -1,0 +1,162 @@
+@import url("header.css");
+@import url("heroSection.css");
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+@import url("product-card.css");
+@import url("footer.css");
+@import url("cart.css");
+@import url("favorit.css");
+@import url("account.css");
+@import url("showProduct.css");
+@import url("home.css");
+
+:root{
+    --mainColor: #00BFA6;
+    --lightBG: #F9F9F9;
+    --darkText:#110909;
+    --secondText:#777777;
+    --background:#FFFFFF;
+}
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: 0.3s ease all;
+    font-family: "Tajawal", sans-serif;
+}
+
+
+.page {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  display: none;
+}
+
+.page.active {
+  opacity: 1;
+  pointer-events: auto;
+  display: block;
+}
+
+
+
+
+/*--------------------button style--------------------*/
+.btn-main{
+color: var(--lightBG);
+background: var(--mainColor);
+border-radius: 10px;
+padding: 0.5rem;
+padding-inline: 1rem;
+}
+.btn-main:hover{
+    color: var(--mainColor);
+background: var(--lightBG);
+border: solid 1px var(--mainColor);
+}
+.btn-second{
+    color: var(--mainColor);
+    padding: 0.5rem;
+    padding-inline: 1rem;
+    position: relative;
+}
+
+.btn-second::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color:var(--mainColor);
+    transition: 0.3s ease;
+  }
+  
+  .btn-second:hover::after {
+    width: 100%;
+  }
+  /*-----------------------------------------------------*/
+  /*---------------------icon style----------------------*/
+  .icon-l{
+    font-size: 24px;
+    color: var(--lightBG);
+  }
+  .icon-l:hover{
+    color:var(--secondText);
+    font-size: 25px;
+  }
+  .icon-d{
+    font-size: 24px;
+    color: var(--darkText);
+  }
+  .icon-d:hover{
+    color: var(--mainColor);
+    font-size: 25px;
+  }
+  .icon-main{
+    font-size: 24px;
+    color: var(--mainColor);
+  }
+  .icon-main:hover{
+    font-size: 25px;
+  }
+  /*-----------------------------------------------------*/
+  
+ 
+  
+  @media (max-width: 600px) {
+    /* زر التصفية */
+.filter-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #00BFA6;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 999px;
+  font-size: 16px;
+  z-index: 1500;
+}
+
+/* أوفرلي */
+.filter-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  display: none;
+  z-index: 1990;
+}
+
+/* نافذة التصفية */
+.filter-sheet {
+  position: fixed;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  background: white;
+  border-radius: 16px 16px 0 0;
+  box-shadow: 0 -4px 12px rgba(0,0,0,0.2);
+  transition: bottom 0.3s ease;
+  z-index: 2000;
+  padding: 1rem;
+}
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* عند التفعيل */
+.filter-sheet.open {
+  bottom: 0;
+}
+
+.filter-overlay.active {
+  display: block;
+}
+  }
+  

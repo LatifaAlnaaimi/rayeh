@@ -1,0 +1,46 @@
+
+
+  /*desktop card*/
+  /* ===== الأساسيات ===== */
+  
+  .favorit-section{
+    display: grid;
+    place-items: center;
+    gap: 1rem;
+  }
+  .item-controls-f {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .item-controls-f button{
+    padding-top: 20px;
+}
+  /* Responsive */
+  @media (max-width: 768px) {
+      .favorit-section {
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+        margin: 0px;
+     }
+     .item-controls-f {
+        grid-column: 1/3;
+          flex-direction: row;
+          justify-content:right;
+          padding-inline: 5px;
+          margin-top: 10px;
+          width: 100%;
+        }
+        .item-controls-f button{
+            padding-right: 30px;
+            font-size: 24px;
+            padding-top: 0%;
+        }
+  }
+    @media (min-width: 1024) {
+    .favorit-section{
+    margin-right: 20%;
+    height: 100vh;
+    }
+}
